@@ -9,12 +9,12 @@ metadata:
     github.com/project-slug: BackstageSSPPoC/ DSSP-TargetP-21
     backstage.io/techdocs-ref: dir:.
     jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-21/main
-    argocd/app-name:  dssp-targetp-21-dev
+    argocd/app-name:  dssp-targetp-21-qa
     backstage.io/kubernetes-id:  DSSP-TargetP-21
     sonarqube.org/project-key:  dssp-targetp-21
     prometheus.io/rule: "kube_pod_container_resource_requests{pod=~'dssp-targetp-21.*'}|resource,kube_pod_container_status_restarts_total{pod=~'dssp-targetp-21.*'}|container"
     prometheus.io/alert: "KubePodCrashLooping,KubeDeploymentReplicasMismatch,KubePodNotReady,KubeContainerWaiting,KubeContainerOOMKilled,KubeDeploymentRolloutStuck"
-    prometheus.io/labels: "namespace=dev"
+    prometheus.io/labels: "namespace=qa"
 
 spec:
   type: service
